@@ -55,11 +55,17 @@
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.3.1</version>
+            <version>3.8.1</version>  <!-- Upgrade the compiler plugin -->
             <configuration>
                 <source>8</source>
                 <target>8</target>
             </configuration>
+        </plugin>
+
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.3.2</version>  <!-- Ensure this matches your error message -->
         </plugin>
     </plugins>
 </build>
